@@ -1,0 +1,697 @@
+
+/* NAVBAR */
+.dashboad-nav {
+    background-color: $clr-white;
+    position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    width: 100%;
+
+    nav {
+        height: 56px;
+        background: $clr-white;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 24px;
+        
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            bottom: -40px;
+            left: 0;
+            border-radius: 50%;
+            box-shadow: -20px -20px 0 $clr-white;
+        }
+
+        a {
+            color: $clr-dark;
+            font-size: 20px;
+        &:hover{
+            color: $clr-love;
+        }
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .bx.bx-menu {
+                cursor: pointer;
+                color: $clr-dark;
+            }
+
+            .nav-link {
+                font-size: 16px;
+                transition: .3s ease;
+
+                &:hover {
+                    color: $clr-love;
+                }
+            }
+
+            form {
+                max-width: 400px;
+                width: 100%;
+                margin-right: auto;
+@media screen and (max-width: 908px) {
+        display: none;
+    }
+                .form-input {
+                    display: flex;
+                    align-items: center;
+                    height: 36px;
+                    width: 500px;
+
+                    input {
+                        flex-grow: 1;
+                        padding: 0 16px;
+                        height: 100%;
+                        border: none;
+                        background: $clr-dark-grey;
+                        border-radius: 36px 0 0 36px;
+                        outline: none;
+                        width: 100%;
+                        color: $clr-dark;
+                    }
+
+                    button {
+                        width: 36px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: $clr-love;
+                        color: $clr-white;
+                        font-size: 18px;
+                        border: none;
+                        outline: none;
+                        border-radius: 0 36px 36px 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .profile img {
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+// ====navbar end=====
+
+
+main{
+    background-color: #EEEEEE;
+.head-title {
+        padding-top: 40px;
+        padding-inline: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        grid-gap: 16px;
+        flex-wrap: wrap;
+
+.left {
+h1 {
+font-size: 36px;
+font-weight: 600;
+margin-bottom: 10px;
+color: $clr-dark;
+}
+
+.title-links{
+li {
+    a {
+        color: $clr-love;
+
+    }
+}
+}
+}
+
+}
+
+.three-box {
+margin-inline: 40px;
+.box-info {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+grid-gap: 24px;
+margin-top: 36px;
+
+li {
+padding: 24px;
+background: $clr-white;
+border-radius: 20px;
+display: flex;
+align-items: center;
+grid-gap: 24px;
+
+i {
+width: 80px;
+height: 80px;
+border-radius: 10px;
+font-size: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+&:nth-child(1) {
+    background: $clr-love;
+    color: $clr-white;
+}
+}
+
+.text {
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $clr-dark;
+}
+
+p {
+    color: $clr-dark;
+}
+}
+}
+}
+}
+.dashboard-content{
+width: 95%;
+margin-inline: auto;
+padding-top: 50px;
+padding-bottom: 100px;
+.items{
+display: flex;
+height: fit-content;
+gap: 40px;
+@media screen and (max-width: 908px) {
+        flex-direction: column;
+    }
+.left-items{
+    width: 50%;
+    background: $clr-white;
+    border-radius: 10px;
+@media screen and (max-width: 908px) {
+            width: 100%;
+    }
+.dashboard-container {
+.two-item-wapper {
+        display: flex;
+        gap: 30px;
+        color: $clr-white;
+
+        .workout-summary {
+            width: fit-content;
+            height: fit-content;
+            padding: 25px;
+            background: red;
+            border-radius: 10px;
+        }
+
+        .calories-burned {
+            width: fit-content;
+            height: fit-content;
+            padding: 25px;
+            background: red;
+            border-radius: 10px;
+        }
+    }
+.progress-chart{
+padding-top: 50px;
+.chart-containe{
+position: relative;
+}
+h3{
+
+}
+}
+.goal-suggest-wrapper{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+color: $clr-white;
+.goals-achieved{
+width: fit-content;
+    height: fit-content;
+    padding: 25px;
+    background: red;
+    border-radius: 10px;
+}
+.suggested-exercises{
+width: fit-content;
+    height: fit-content;
+    padding: 25px;
+    background: red;
+    border-radius: 10px;
+}
+}
+}
+}
+.right-item{
+    width: fit-content;
+    margin-inline: auto;
+    background: $clr-white;
+    border-radius: 15px;
+    
+.calender-wrapper{
+#workout-calendar {
+        width:600px;
+        height: fit-content;
+        margin: 0 auto;
+@media screen and (max-width: 908px) {
+        width: 100%;
+    }
+    }
+#open-modal{
+outline: none;
+padding-block: 10px;
+padding-inline: 15px;
+font-size: 30px;
+color: $clr-love;
+cursor: pointer;
+}
+#scheduled-workouts{
+.deleteBtn{
+    outline: none;
+        padding-block: 5px;
+        padding-inline: 15px;
+        font-size: 18px;
+        color: $clr-white;
+        background-color: $clr-love;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+&:hover{
+    color: $clr-white;
+    background-color: $clr-dark;
+}
+}
+}
+}
+
+}
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+// ========================logworkout==============================
+
+
+.log-workout-hero-section{
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(to right, black, red);
+    position: relative;
+
+    .section-4-abt-wrapper {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 800px) {
+         
+        }
+
+        .desc {
+            width: 50%;
+            padding-left: 30px;
+
+            @media (max-width: 800px) {
+                width: 70%;
+                padding-top: 20px;
+                text-align: center;
+                padding-left: 0;
+            }
+@media (max-width: 650px) {
+    padding-inline: 10px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+            .desc1 {
+                color: $clr-white;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            p{
+                @media (max-width: 650px) {
+                        font-size: 16px;
+                    }
+            }
+            h3 {
+                color: $clr-love;
+            }
+            button{
+                a{
+                        color: $clr-white;
+                &:hover{
+                    color: $clr-black;
+                }
+                    }
+            }
+            }
+        }
+
+        .img-wrapper {
+            width:50%;
+            height: 100vh;
+
+            @media (max-width: 650px) {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+// ================form workout start====================
+.log-workout-section{
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 100px;
+.log-workout-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    @media (max-width: 900px) {
+            grid-template-columns:  1fr;
+        }
+.image-wrappers{
+    background-color: $clr-love;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+img{
+    width: 100%;
+    height: 100%;
+}
+}
+.form-wrapper{
+    border-radius: 10px;
+    padding-top: 50px;
+    background-color: $clr-dark;
+h3{
+    padding-bottom: 15px;
+}
+#log-workout-form{
+    padding-inline: 20px;
+    padding-block: 40px;
+    border-radius: 10px;
+width: fit-content;
+    margin-inline: auto;
+display: flex;
+flex-direction: column;
+text-align: center;
+background-color: $clr-white;
+gap: 30px;
+.form-item{
+    display: flex;
+    flex-direction: column;
+input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        color: #333;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Focus effect */
+&:focus {
+        background-color: #e0e0e0;
+        box-shadow: 0 0 5px rgba(206, 7, 7, 0.5);
+    }
+}
+  button {
+      background-color: $clr-love;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+&:hover {
+        background-color: gray;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+.workout-list-wrapper{
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding-top: 30px;
+background-color: $clr-love;
+color: $clr-white;
+padding-left: 25px;
+padding-bottom: 20px;
+margin-top: 40px;
+border-radius: 10px;
+button {
+    margin-bottom: 10px;
+        background-color: $clr-white;
+        color: $clr-dark;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            color: $clr-white;
+            background-color: $clr-dark;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    }
+.workout-list{
+}
+}
+}
+}
+}
+
+
+// =====================BMI START=============================
+.BMI-section{
+    height: fit-content;
+    background-image: url('/assets/img/worklog2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 90px;
+&::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+.bmi-wrapper{
+    
+    width: 90%;
+    margin-inline: auto;
+    position: relative;
+    color: white;
+    // text-align: center;
+    z-index: 2;
+    padding-top: 90px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+.bmi-left{
+color: $clr-white;
+width: 400px;
+@media (max-width: 420px) {
+        width: 290px;
+    }
+}
+canvas{
+    color: white;
+}
+.bmi-right{
+    background-color: $clr-love;
+    padding-top: 50px;
+    border-radius: 10px;
+    padding-inline: 30px;
+    @media (max-width: 420px) {
+            width: 280px;
+        }
+#bmiForm{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+.bmi-items{
+display: flex;
+flex-direction: column;
+input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        color: #333;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Focus effect */
+    &:focus {
+        background-color: #e0e0e0;
+        box-shadow: 0 0 5px rgba(206, 7, 7, 0.5);
+    }
+}
+.bmi-itemsBtn{
+    display: flex;
+    gap: 30px;
+button {
+        margin-bottom: 10px;
+        background-color: $clr-white;
+        color: $clr-dark;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+            color: $clr-white;
+            background-color: $clr-dark;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+}
+#bmiResult{
+color: $clr-love;
+}
+}
+}
+}
+
+// =====================BMI END=============================
+
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+
+
+.bmi-section{
+.containers{
+.containers {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .result {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .result p {
+        margin: 10px 0;
+    }
+
+
+    canvas {
+        margin-top: 20px;
+    }
+}
+}

@@ -1,0 +1,129 @@
+/* Preloader Styles */
+#preloader {
+    background-color: #000;
+    background-image: url('/assets/img/excited-loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+
+
+// /* Preloader Styles */
+#Home-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: $clr-white;
+    z-index: 10000;
+.icon {
+            font-size: 50px;
+            position: absolute;
+            animation: bounce-Home-preloader 3s infinite ease-in-out;
+        }
+}
+
+// /* Bouncing Animation */
+@keyframes bounce-Home-preloader {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 100vw;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+    }
+
+    75% {
+        top: 100vh;
+        left: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        top: 100vh;
+        left: 100vw;
+        transform: translate(-100%, -100%);
+    }
+}
+
+
+
+// ========================ABOUT-PRELOADER===========================
+
+#about-preloader {
+    background-color: #000;
+    background-image: url('/assets/img/spin7-sections.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+// ========================categories-PRELOADER===========================
+
+#categories-preloader {
+    background-color: #000;
+    background-image: url('/assets/img/spin7-sections.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+// ========================contact-PRELOADER===========================
+
+#contact-preloader {
+    background-color: #000;
+    background-image: url('/assets/img/spin7-sections.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+// ========================dashboard-PRELOADER===========================
+
+#dashboard-preloader {
+    background-color: #000;
+    background-image: url('/assets/img/spin7-sections.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+// ========================timetable-PRELOADER===========================
+
+#timetable-preloader {
+    background-color: #000;
+    background-image: url('/assets/img/spin7-sections.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+

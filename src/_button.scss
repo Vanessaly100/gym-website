@@ -1,0 +1,238 @@
+/* Buttons */
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: $clr-black;
+    padding: 0.375rem 0.75rem;
+    letter-spacing: $spacing;
+    display: inline-block;
+    transition: $transition;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: $radius;
+
+    &:hover {
+        color: $clr-white;
+        background: $clr-black;
+    }
+
+
+}
+
+.btn-white {
+    color: $clr-love;
+    border-color: $clr-love;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background: $clr-white;
+        color: $clr-love;
+    }
+
+}
+
+
+@media screen and (max-width: 990px) {
+    .register-btn {
+        display: none;
+    }
+}
+
+
+// register button
+.register-btn{
+    text-transform: uppercase;
+        background: $clr-love;
+        color: $clr-white;
+        padding: 0.375rem 0.75rem;
+        letter-spacing: $spacing;
+        display: inline-block;
+        transition: $transition;
+        font-size: 0.875rem;
+        border: none;
+        cursor: pointer !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: $radius;
+        margin-right: 20px;
+    
+        &:hover {
+            color: $clr-white;
+            background: $clr-black;
+        }
+@media screen and (max-width: 850px) {
+    // display: none;
+}
+}
+
+.header-btn{
+.displaynone {
+        @media screen and (max-width: 850px) {
+                display: none;
+            }
+        }
+}
+
+// section two start
+.classes-btn{
+text-transform: uppercase;
+    background: $clr-love !important;
+    color: $clr-white;
+    padding: 0.575rem 0.75rem;
+    letter-spacing: $spacing;
+    display: inline-block;
+    transition: $transition;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 20px;
+    width: fit-content;
+    margin-top: 15px;
+
+    &:hover {
+        color: $clr-love !important;
+        background: $clr-white !important;
+    }
+}
+// section two ens
+.learnmorebtn{
+    text-transform: uppercase;
+        background: $clr-love !important;
+        color: $clr-white;
+        padding: 0.375rem 0.75rem;
+        letter-spacing: $spacing;
+        display: inline-block;
+        transition: $transition;
+        font-size: 0.875rem;
+        border: none;
+        cursor: pointer !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: $radius;
+        margin-right: 20px;
+    
+        &:hover {
+            color: $clr-white;
+            background: $clr-black;
+        }
+}
+
+.view-pricebtn{
+    text-transform: uppercase;
+        background: $clr-black !important;
+        color: $clr-love;
+        padding: 0.375rem 0.75rem;
+        letter-spacing: $spacing;
+        display: inline-block;
+        transition: $transition;
+        font-size: 0.875rem;
+        border: none;
+        cursor: pointer !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: $radius;
+        margin-right: 20px;
+        width: fit-content;
+    
+        &:hover {
+            color: $clr-white;
+            background: $clr-black;
+        }
+}
+
+// section six
+
+.plansbtn{
+text-transform: uppercase;
+    background: $clr-love !important;
+    color: $clr-white;
+    padding: 0.575rem 0.75rem;
+    letter-spacing: $spacing;
+    display: inline-block;
+    transition: $transition;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 20px;
+    width: fit-content;
+    margin-top: 15px;
+
+    &:hover {
+        color: $clr-love !important;
+        background: $clr-white !important;
+    }
+}
+
+.active{
+.plansbtn{
+text-transform: uppercase;
+    background: $clr-white !important;
+    color: $clr-love;
+    padding: 0.575rem 0.75rem;
+    letter-spacing: $spacing;
+    display: inline-block;
+    transition: $transition;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 20px;
+    width: fit-content;
+    margin-top: 15px;
+
+    &:hover {
+        color: $clr-love !important;
+        background: $clr-white !important;
+    }
+}
+}
+
+
+// footer
+.newsletter-btn{
+text-transform: uppercase;
+    background: $clr-love !important;
+    color: $clr-white;
+    padding: 0.575rem 0.75rem;
+    letter-spacing: $spacing;
+    display: inline-block;
+    transition: $transition;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-right: 20px;
+    width: fit-content;
+    margin-top: 15px;
+
+    &:hover {
+        color: $clr-love !important;
+        background: $clr-white !important;
+    }
+}
+
+
+// about button
+.about-btn{
+    background: transparent !important;
+        color: $clr-white;
+        padding: 0.575rem 0.75rem;
+        letter-spacing: $spacing;
+        display: inline-block;
+        transition: $transition;
+        font-size: 0.875rem;
+        border: 2px solid $clr-white;
+        // cursor: pointer !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        margin-right: 20px;
+        width: fit-content;
+        margin-top: 15px;
+}

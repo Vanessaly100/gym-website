@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time table</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- styles -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="timetable" id="timetable"></div>
+    <nav>
+        <header class="header">
+            <div class="header-row containers" role="navigation" aria-label="Main">
+                <div class="header-left">
+                    <div class="logo">
+                    </div><span>VEE<small>FIT</small></span>
+                </div>
+                <div class="header-right">
+                    <ul class="main-menu">
+                        <li class="menu-item"><a href="index.html" class="active">Home</a></li>
+                        <li class="menu-item"><a href="about.html">About us</a></li>
+                        <li class="menu-item mega-menu">
+                            <a href="#">Pages+</a>
+                            <div class="mega-menu-wrapper slideInUp">
+                                <div class="mega-menu-col">
+                                    <ul class="mega-sub-menu">
+                                        <li><a href="categories.html">Categories</a></li>
+                                        <li><a href="dashbord.html">Dashboard</a></li>
+                                        <li><a href="log-workout.html">Log Workout</a></li>
+                                        <li><a href="timetable.html">TimeTable</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item dropdown">
+                            <a href="workout.html"> Workout</a>
+                        </li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="#" id="hamburger-icon" class="mobile-toggler" aria-label="Mobile Menu"><i
+                            class="fas fa-bars"></i></a>
+                </div>
+
+
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="mobile-menu hidden slideInDown">
+                    <ul>
+                        <li class="menu-item"><a href="index.html" class="active">Home</a></li>
+                        <li class="menu-item"><a href="#">Log Workout</a></li>
+
+                        <li class="menu-item mega-menu">
+                            <a href="#">Pages +</a>
+                            <div class="mega-menu-wrapper">
+                                <div class="mega-menu-col">
+                                    <ul class="mega-sub-menu">
+                                        <li><a href="categories.html">Categories</a></li>
+                                        <li><a href="dashbord.html">Dashboard</a></li>
+                                        <li><a href="log-workout.html">Log Workout</a></li>
+                                        <li><a href="timetable.html">TimeTable</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item dropdown">
+                            <a href="workout.html"> Workout</a>
+                        </li>
+                        <li class="header-btn">
+                            <button class="register-btn" id="headerBtn">
+                                Register
+                            </button>
+                        </li>
+                        <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                        
+                        </ul>
+                        </div>
+                        <div class="header-btn header-displaynone">
+                            <button class="register-btn displaynone" id="headerBtn">
+                                Register
+                            </button>
+                        </div>
+                        </div>
+        </header>
+    </nav>
+    <!-- hero section -->
+    <section class="timetable-hero-section">
+        <div class="section-4-abt-wrapper">
+            <div class="desc">
+                <div class="desc1">
+                    <h3> WORKOUT TIME TABLE SECTION</h3>
+                    <p>VEEFIT workout timetable is essential for reaching your fitness goals effectively. It provides consistency,
+                    helps balance different types of exercises, and ensures proper recovery. Below is a personalized workout schedule
+                    designed to help you achieve optimal results.</p>
+                    <button class="plansbtn logwBtn"><a href="categories.html">CATEGORIES</a></button>
+                </div>
+            </div>
+            <div class="img-wrapper">
+                <img src="/assets/img/header.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- hero section ends -->
+
+<!-- TIME TABLE START -->
+<div id="header">
+    <div id="body">
+        <div class="table-container">
+            <table class="timetable" border="3">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>MONDAY</th>
+                        <th>TUESDAY</th>
+                        <th>WEDNESDAY</th>
+                        <th>THURSDAY</th>
+                        <th>FRIDAY</th>
+                        <th>SATURDAY</th>
+                        <th>SUNDAY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table body content -->
+                    <tbody>
+                        <tr class="row_1 row_gray">
+                    
+                            <td>05.00 - 06.00</td>
+                            <td class="event">Boxing<br>05.00 - 06.00</td>
+                            <td class="event">Boxing<br>05.00 - 06.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_2">
+                            <td>06.00 - 07.00</td>
+                            <td class="event"> Boxing<br>06.00 - 07.00</td>
+                            <td class="event"> Boxing<br>06.00 - 07.00</td>
+                            <td class="event" rowspan="3">Gym Fitness<br>06.00 - 08.30<br><br>Cardio Fitness<br>06.00 - 08.30
+                            </td>
+                            <td class="event" rowspan="3">Gym Fitness<br>06.00 - 08.30<br><br>Cardio Fitness<br>06.00 - 08.30
+                            </td>
+                            <td class="event" rowspan="3">Gym Fitness<br>06.00 - 08.30<br><br>Cardio Fitness<br>06.00 - 08.30
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_3 row_gray">
+                            <td>07.00 - 08.00</td>
+                            <td class="event">Cardio Fitness<br>07.00 - 08.00</td>
+                            <td class="event">Cardio Fitness<br>07.00 - 08.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_4">
+                            <td>08.00 - 09.00</td>
+                            <td></td>
+                            <td></td>
+                            <td class="event" rowspan="2">Indoor Cycling<br>08.00 - 09.30</td>
+                            <td class="event" rowspan="2">Indoor Cycling<br>08.00 - 09.30</td>
+                        </tr>
+                        <tr class="row_5 row_gray">
+                            <td>09.00 - 10.00</td>
+                            <td class="event" rowspan="3">Indoor Cycling<br>09.00 - 11.25</td>
+                            <td class="event" rowspan="3">Indoor Cycling<br>09.00 - 11.25</td>
+                            <td></td>
+                            <td class="event">Indoor Cycling<br>09.00 - 10.00</td>
+                            <td class="event">Indoor Cycling<br>09.00 - 10.00</td>
+                        </tr>
+                        <tr class="row_6">
+                            <td>10.00 - 11.00</td>
+                            <td></td>
+                            <td class="event" rowspan="2">Cardio Fitness<br>10.00 - 11.30</td>
+                            <td class="event" rowspan="2">Cardio Fitness<br>10.00 - 11.30</td>
+                            <td class="event">Gym Fitness<br>10.00 - 11.00</td>
+                            <td class="event">Gym Fitness<br>10.00 - 11.00</td>
+                        </tr>
+                        <tr class="row_7 row_gray">
+                            <td>11.00 - 12.00</td>
+                            <td></td>
+                            <td class="event">Indoor Cycling<br>11.00 - 12.00</td>
+                            <td class="event">Indoor Cycling<br>11.00 - 12.00</td>
+                        </tr>
+                        <tr class="row_8">
+                            <td>12.00 - 13.00</td>
+                            <td></td>
+                            <td></td>
+                            <td class="event">Gym Fitness<br>12.00 - 13.00</td>
+                            <td class="event">Gym Fitness<br>12.00 - 13.00</td>
+                            <td class="event" rowspan="4">Boxing<br>12.00 - 15.45</td>
+                            <td class="event" rowspan="4">Gym Fitness<br>12.00 - 13.00<br><br>Boxing<br>12.00 -
+                                15.45<br><br>Cardio Fitness<br>14.00 - 16.00</td>
+                            <td class="event">Gym Fitness<br>12.00 - 13.00</td>
+                        </tr>
+                        <tr class="row_9 row_gray">
+                            <td>13.00 - 14.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_10">
+                            <td>14.00 - 15.00</td>
+                            <td class="event" rowspan="4">Gym Fitness<br>14.00 - 16.15<br><br>Indoor Cycling<br>16.00 - 17.30
+                            </td>
+                            <td class="event" rowspan="4">Gym Fitness<br>14.00 - 16.15<br><br>Indoor Cycling<br>16.00 - 17.30
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="event" rowspan="2">Cardio Fitness<br>14.00 - 16.00</td>
+                        </tr>
+                        <tr class="row_11 row_gray">
+                            <td>15.00 - 16.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_12">
+                            <td>16.00 - 17.00</td>
+                            <td></td>
+                            <td class="event" rowspan="2">Indoor Cycling<br>16.00 - 17.30</td>
+                            <td class="event" rowspan="4">Indoor Cycling<br>16.00 - 17.30<br><br>Gym Fitness<br>17.30 -
+                                20.00<br><br>Boxing<br>18.00 - 20.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_13 row_gray">
+                            <td>17.00 - 18.00</td>
+                            <td></td>
+                            <td class="event">Gym Fitness<br>17.00 - 18.00</td>
+                            <td class="event">Gym Fitness<br>17.00 - 18.00</td>
+                        </tr>
+                        <tr class="row_14">
+                            <td>18.00 - 19.00</td>
+                            <td class="event" rowspan="2">Boxing<br>18.00 - 19.00<br><br>Yoga Pilates<br>18.30 - 20.00</td>
+                            <td class="event" rowspan="2">Boxing<br>18.00 - 19.00<br><br>Yoga Pilates<br>18.30 - 20.00</td>
+                            <td class="event" rowspan="2">Boxing<br>18.00 - 20.00<br><br>Yoga Pilates<br>18.30 - 20.00</td>
+                            <td class="event" rowspan="2">Boxing<br>18.00 - 20.00<br><br>Yoga Pilates<br>18.30 - 20.00</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row_15 row_gray">
+                            <td>19.00 - 20.00</td>
+                            <td class="event" rowspan="2">Yoga Pilates<br>19.00 - 20.30</td>
+                            <td class="event" rowspan="2">Yoga Pilates<br>19.00 - 20.30</td>
+                        </tr>
+                        <tr class="row_16">
+                            <td>20.00 - 21.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- TIME TABLE END -->
+
+<!-- registration form start -->
+<div id="content_container">
+    <div id="form_container">
+        <div id="form_content_inner_container">
+            <div id="form_header_container">
+                <span id="closebtn"><i class="fa-solid fa-xmark"></i></span>
+                <h2 id="form_header"> REGISTRATION FORM </h2>
+            </div>
+            <div class="fullname-age-wrapper">
+                <div class="fullname-container">
+                    <input type="text" id="full_name" placeholder="Full name">
+                    <span id="full_name_error" class="error"></span>
+                </div>
+                <div class="age-container">
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    <span id="age_error" class="error"></span>
+                </div>
+            </div>
+            <div class="email-container">
+                <input type="email" id="email" placeholder="Email">
+                <span id="email_error" class="error"></span>
+            </div>
+            <div class="password-gender-wrapper">
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="New Password">
+                    <span id="password_error" class="error"></span>
+                </div>
+                <div class="gender-container">
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span id="gender_error" class="error"></span>
+                </div>
+            </div>
+            <div class="level-goals">
+                <div class="level-wrapper">
+                    <select id="fitness_level" name="fitness_level" required>
+                        <option value="" disabled selected>Select your fitness level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <span id="level_error" class="error"></span>
+                </div>
+                <div class="goal-wrapper">
+                    <select id="workout_goal" name="workout_goal" required>
+                        <option value="" disabled selected>Select your workout goal</option>
+                        <option value="weight_loss">Weight Loss</option>
+                        <option value="muscle_gain">Muscle Gain</option>
+                        <option value="endurance">Endurance</option>
+                        <option value="flexibility">Flexibility</option>
+                        <option value="general_fitness">General Fitness</option>
+                    </select>
+                    <span id="goal" class="error"></span>
+                </div>
+            </div>
+            <div class="preferred-time-container">
+                <select id="preferred_time" name="preferred_time" required>
+                    <option value="" disabled selected>Select your preferred workout time</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+                <span id="preferred_time_error" class="error"></span>
+            </div>
+            <div class="newsletter-container">
+                <span>Sign up for our fitness newsletter</span>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+
+            <button id="registerBtn">Register</button>
+        </div>
+
+    </div>
+</div>
+</div>
+    <!-- footer -->
+    <!-- footer -->
+    <footer class="footer-section">
+        <section class="page-footer">
+            <!--   === Footer Contents Starts ===   -->
+            <div class="footer-contents">
+                <div class="footer-col footer-col-1">
+                    <div class="footer-col-title">
+                        <h3>VEE<span>FIT</span></h3>
+                    </div>
+                    <div class="footer-col-desc">
+                        <p>Welcome to VEEsFIT, where we believe that every journey to fitness is unique and empowering.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> 321 Street, California, USA</span>
+                        <span> <i class="fa-solid fa-phone"></i> +012 123 45678</span>
+                        <span><i class="fa-solid fa-envelope"></i> info@sample.com</span>
+                        <div class="footer-social-media">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-col footer-col-2">
+                    <div class="footer-col-title">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <div class="footer-col-desc">
+                        <a href="index.html"><span><i class="fa-solid fa-angles-right"></i></span>Home</a>
+                        <a href="about.html"> <span><i class="fa-solid fa-angles-right"></i></span>About</a>
+                        <a href="dashbord.html"> <span><i class="fa-solid fa-angles-right"></i></span>Dashboard</a>
+                        <a href="log-workout.html"> <span><i class="fa-solid fa-angles-right"></i></span>Log Workout</a>
+                        <a href="contact.html"> <span><i class="fa-solid fa-angles-right"></i></span>Contact</a>
+                        <a href="categories.html"> <span><i class="fa-solid fa-angles-right"></i></span>Categories</a>
+                        <a href="timetable.html"> <span><i class="fa-solid fa-angles-right"></i></span>Timetable</a>
+                        <a href="workout.html"> <span><i class="fa-solid fa-angles-right"></i></span>Workouts</a>
+                    </div>
+                </div>
+    
+                <div class="footer-col footer-col-3">
+                    <div class="footer-col-title">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <div class="footer-col-desc">
+                        <p>Join our exclusive email list and receive fitness tips, health advice, and special offers.</p>
+                        <form class="newsletter">
+                            <input type="email" placeholder="Your Email" required>
+                            <span class="error-message" style="color: red; display: none;"></span>
+                            <button id="subscribeBtn" class="btn newsletter-btn" type="button">Subscribe</button>
+                            <!-- Change type to button -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--   === Footer Contents Ends ===   -->
+        </section>
+    </footer>
+    <!--   *** Copy Rights Starts ***   -->
+    <div class="copy-rights">
+        <div class="copy-right-container">
+            <p>copyright &copy; <b>Vanessa lydia</b> <span id="date"></span>.All Rights Reserved</p>
+        </div>
+    </div>
+    <!--   *** Copy Rights Ends ***   -->
+    <div id="progress">
+        <span id="progress-value"><i class="fas fa-arrow-up"></i></span>
+    </div>
+    <!-- javascript -->
+     <!-- firebase registration form script -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+        // Firebase Configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCIIaV175JXl71ug1XjMtJP5meVtoVAUOk",
+            authDomain: "registration-form-88ff1.firebaseapp.com",
+            databaseURL: "https://registration-form-88ff1-default-rtdb.firebaseio.com",
+            projectId: "registration-form-88ff1",
+            storageBucket: "registration-form-88ff1.appspot.com",
+            messagingSenderId: "260690198066",
+            appId: "1:260690198066:web:98d3af64975edca00a062b"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        // Add form validation and error display logic
+        function validateForm() {
+            let isValid = true;
+            const fullName = document.getElementById('full_name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const fitnessLevel = document.getElementById('fitness_level').value;
+            const workoutGoal = document.getElementById('workout_goal').value;
+            // const workoutFrequency = document.getElementById('workout_frequency').value;
+            const preferredTime = document.getElementById('preferred_time').value;
+            const newsletter = document.getElementById('newsletter').value;
+
+            // Clear previous error messages
+            document.querySelectorAll('.error').forEach(span => span.textContent = '');
+
+            // Basic validation checks
+            if (fullName === '') {
+                document.getElementById('full_name_error').textContent = 'Full Name is required';
+                isValid = false;
+            }
+            if (email === '' || !validateEmail(email)) {
+                document.getElementById('email_error').textContent = 'Valid Email is required';
+                isValid = false;
+            }
+            if (password === '' || password.length < 6) {
+                document.getElementById('password_error').textContent = 'Password must be at least 6 characters';
+                isValid = false;
+            }
+            if (age === '') {
+                document.getElementById('age_error').textContent = 'Age  is required';
+                isValid = false;
+            }
+            if (gender === '') {
+                document.getElementById('gender_error').textContent = 'Gender  is required';
+                isValid = false;
+            }
+            if (fitnessLevel === '') {
+                document.getElementById('level_error').textContent = 'Fitness Level  is required';
+                isValid = false;
+            }
+            if (workoutGoal === '') {
+                document.getElementById('level_error').textContent = 'Workout Goal  is required';
+                isValid = false;
+            }
+            // if (workoutFrequency === '') {
+            //     document.getElementById('frequentworkout_error').textContent = 'Workout frequency is required';
+            //     isValid = false;
+            // }
+            if (preferredTime === '') {
+                document.getElementById('preferred_time_error').textContent = 'preferred time is required';
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Define the showSuccessMessage function outside the event listener
+        function showSuccessMessage(message) {
+            Swal.fire({
+                title: 'Success!',
+                text: message,
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        }
+        // Form submission logic
+        const registerBtn = document.getElementById('registerBtn');
+        registerBtn.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent form from submitting traditionally
+
+            if (!validateForm()) {
+                return; // Exit if form validation fails
+            }
+
+            const fullName = document.getElementById('full_name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const fitnessLevel = document.getElementById('fitness_level').value;
+            const workoutGoal = document.getElementById('workout_goal').value;
+            // const workoutFrequency = document.getElementById('workout_frequency').value;
+            const preferredTime = document.getElementById('preferred_time').value;
+            const newsletter = document.getElementById('newsletter').value;
+
+
+            // Save data to Firebase
+            set(ref(db, 'user/' + fullName), {
+                fullName: fullName,
+                email: email,
+                password: password,
+                age: age,
+                gender: gender,
+                fitnessLevel: fitnessLevel,
+                workoutGoal: workoutGoal,
+                // workoutFrequency: workoutFrequency,
+                preferredTime: preferredTime,
+                newsletter: newsletter
+
+            })
+
+                .then(() => {
+                    // Call the success message function here
+                    showSuccessMessage('User Registered Successfully');
+                    clearForm(); // Clear the form fields
+                })
+                .catch((error) => {
+                    console.error('Error storing data:', error);
+                    alert('Failed to store user data');
+                });
+        });
+
+        // Clear the form fields after submission
+        function clearForm() {
+            document.getElementById('full_name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('gender').value = '';
+            document.getElementById('fitness_level').value = '';
+            document.getElementById('workout_goal').value = '';
+            // document.getElementById('workout_frequency').value = '';
+            document.getElementById('preferred_time').value = '';
+            document.getElementById('newsletter').value = '';
+
+        }
+
+    </script>
+    
+   <script> src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script type="module" src="/public/main.script/scrollreveal.js"></script>
+    <script type="module" src="/public/main.script/script.js"></script>
+    <script type="module" src="/public/main.script/subsc-register-form.js"></script>
+
+    <script>
+        // =========================timetable-preloader================================
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById('timetable-preloader');
+
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

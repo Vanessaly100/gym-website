@@ -1,0 +1,180 @@
+LOG WORKOUT BMI PROCESSES
+
+ Here’s a list of all the processes happening in the code:
+Wait for the page to fully load before running the script.
+Grab elements from the page such as the form, inputs, error messages, result display, and buttons.
+Initialize the chart for BMI display when the page loads.
+Listen for form submission (when the user presses the submit button).
+Prevent the page from reloading when the form is submitted.
+Get weight and height values from the form.
+Convert height from feet to meters.
+Validate the weight and height inputs (show errors if they’re invalid).
+Calculate the BMI using the formula.
+Determine the BMI status (e.g., Underweight, Normal, Overweight, Obesity).
+Display the BMI and status on the webpage.
+Save the BMI data (including the date) in the browser’s local storage.
+Clear the form inputs after submission.
+Update the BMI chart with new data.
+Clear the BMI data and update the chart when the user clicks the "Clear Data" button.
+Redraw the chart with the latest BMI data each time a change happens.
+These processes help manage user input, calculate BMI, display it, save it for later, and visualize progress with a chart.
+
+
+
+<!-- PROGRESS CHART FROM CALORIES BURN FROM LOG WORKOUT PAGE -->
+Here’s a list of the processes happening in the code:
+
+Fetch workouts from localStorage:
+
+Retrieve stored workouts or start with an empty list if there are none.
+Get HTML elements:
+
+Find the page elements for displaying total workouts, total calories, goals list, and exercise suggestions.
+Define workout goals:
+
+Create two goals: completing 20 workouts and burning 2000 calories, with both goals starting at 0.
+Update goals:
+
+Calculate and update the current number of completed workouts.
+Sum up the total calories burned from all workouts and update the calorie goal.
+Display the dashboard data:
+
+Show the total number of workouts completed.
+Display the total number of calories burned.
+Update the list of goals with the current progress for each goal.
+Fetch and display exercise suggestions:
+
+Get 5 exercise suggestions from an external API and display them.
+Handle errors if the API request fails.
+Create and display a progress chart:
+
+Create a bar chart using Chart.js to show how many calories were burned in each workout.
+Call the displayDashboard function:
+
+Trigger the dashboard update process to show all data when the page loads.
+
+
+
+
+
+<!-- FULL CALENDER ON DASHBOARD -->
+Wait for the page to load:
+
+The script waits for the page to fully load before running any code.
+Get HTML elements:
+
+The code finds the calendar, modal (pop-up), form, and other sections where the workouts will be displayed.
+Create the calendar:
+
+A calendar is created on the page that shows the entire month and allows users to select dates.
+Open the workout form when a date is selected:
+
+When you click on a date in the calendar, the form to input workout details opens.
+Load saved workouts from localStorage:
+
+Any previously saved workouts are loaded and displayed on the calendar.
+Show the calendar on the page:
+
+The calendar is displayed.
+Open workout form manually:
+
+A button allows the user to open the form without selecting a date.
+Handle workout form submission:
+
+When the form is submitted, the page does not reload. Instead, the workout details are handled by the script.
+Get workout details from the form:
+
+The code retrieves workout name, calories burned, and workout duration from the form inputs.
+Create a new workout object:
+
+A new workout is created with the details provided by the user, including the selected date, workout name, calories, and duration.
+Add the workout to the calendar:
+
+The workout is added to the calendar.
+Save the workout to localStorage:
+
+The workout is saved in the browser’s memory so it can be retrieved later.
+Show scheduled workouts below the calendar:
+
+All saved workouts are displayed below the calendar, listing workout details like name, calories, and duration.
+Clear the form and close the modal:
+
+After submitting a workout, the form is reset and the pop-up window is closed.
+Display all saved workouts:
+
+A function shows all the workouts below the calendar.
+Delete a workout:
+
+A function allows users to delete a workout. This removes the workout from the calendar and from localStorage.
+Display workouts on page load:
+
+When the page first loads, all previously saved workouts are shown.
+
+
+
+<!-- CONTACT FORM -->
+List of Processes:
+Form Submission Interception
+
+The form submission is caught by the submit event listener, preventing the form from being submitted in the usual way.
+Prevent Default Form Submission
+
+event.preventDefault() stops the form from submitting and refreshing the page immediately.
+Clear Previous Error Messages
+
+Any previous error messages are cleared out so old errors don't show up again.
+Retrieve Input Values
+
+The code grabs the values from the input fields (name, email, message).
+Initialize Validation Check
+
+A variable (valid) is set to true, assuming everything is correct initially.
+Name Field Validation
+
+The code checks if the name field is empty and shows an error message if it is.
+Email Field Validation
+
+The code checks if the email field is empty and shows an error message if it is.
+Email Format Validation
+
+The code uses a regular expression (regex) to ensure the email is in a valid format (like "someone@example.com"). If it’s not, it shows an error message.
+Message Field Validation
+
+The code checks if the message field is empty and shows an error message if it is.
+Validation Passes
+
+If all fields are filled out and valid (name, email, and message are correct), the form is considered ready to be sent.
+Prepare Data for Sending
+
+The form data (name, email, message) is packaged into an object (params) to send to the email service (emailjs).
+Send Form Data using emailjs
+
+The emailjs service is used to send the form data using the service ID and template ID.
+Handle Successful Email Send
+
+If the email is sent successfully:
+The form fields (name, email, and message) are cleared.
+A success message is shown using a SweetAlert2 popup.
+Handle Email Sending Error
+
+If there’s an error while trying to send the email:
+An error message is shown using a SweetAlert2 popup.
+The error is logged in the console for debugging.
+Summary of Key Processes:
+Interception & Prevention: Stop the form from submitting automatically.
+Validation: Check if name, email, and message fields are properly filled.
+Email Sending: Use emailjs to send the form data if validation passes.
+Feedback: Display success or error messages based on the email sending outcome.
+These processes ensure that the form works correctly and provides feedback to the user in case of any issues.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,818 @@
+/* Sections */
+// .section {
+//     padding: 4rem 0;
+// }
+
+// .section-title {
+//     text-align: center;
+//     margin-bottom: 2rem;
+// }
+
+// .section-title h2 {
+//     font-size: 2rem;
+//     color: $clr-primary-1;
+// }
+
+// .section-content {
+//     max-width: $max-width;
+//     margin: 0 auto;
+//     padding: 0 1rem;
+// }
+
+// @media screen and (min-width: 800px) {
+//     .section-content {
+//         padding: 0;
+//     }
+// }
+
+// ==================ABOUT PAGE================
+.hero-section{
+    background: $clr-love;
+}
+.hero-section {
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/exercise-kettlebell-and-black-woman-in-gym-for-royalty-free-image-1704709307.jpg?resize=980:*');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+&::before{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $clr-love;
+    opacity: 0.5;
+}
+.hero-sect-wrapper {
+position: absolute;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+.desc-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+h1{
+    color: $clr-white;
+    padding-bottom: 25px;
+}
+.about-btn{
+    cursor: pointer;
+a{
+    color: $clr-white;
+&:hover{
+    color: $clr-black;
+}
+}
+span{
+    font-size: 16px;
+    padding-inline: 10px;
+}
+}
+}
+}
+}
+
+
+//============= section one start=================
+.section-one{
+.section-one-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: fit-content;
+@media (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
+.item-left{
+    
+.left-decs1{
+h3{
+    padding-bottom: 20px;
+    color: $clr-love;
+}
+h2{}
+p{}
+}
+.left-desc2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30PX;
+    margin-top: 20px;
+
+.left-desc21{
+span{
+
+}
+h5{}
+}
+}
+}
+.item-right{
+   
+.item-right-img{
+    height: 100vh;
+    width: 100%;
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px $clr-love; 
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+}
+}
+}
+}
+
+// ======section two start ============
+.section-two{
+    padding: 3em 2em;
+        background: $clr-love;
+        color: $clr-white;
+        text-align: center;
+.counter-wrapper{
+max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em 2em;
+    @media (max-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    @media (max-width: 400px) {
+            grid-template-columns: 1fr;
+        }
+.counter{
+    position: relative;
+h1{
+    margin-bottom: 0.5em;
+}
+}
+}
+}
+// ============section two end=====
+
+// ============section three start=====
+.section-three-value{
+    position: relative;
+        width: 100%;
+        height: 500px;
+        background-image: url('/assets/img/testmonia-bg.jpg');
+        background-size: cover;
+        background-position: top;
+.overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+}
+// ============section three end=====
+
+// ============section absolute containers start=====
+.absolute-container-section{
+    padding-bottom: 100px;
+    position: relative;
+    top: -50px;
+.abst-wrapper{
+    width: 90%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 900px) {
+            grid-template-columns:  1fr;
+            text-align: center;
+        }
+    gap: 20px;
+.items{
+display: flex;
+flex-direction: column;
+text-align: left;
+gap: 20px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding-inline: 15px;
+padding-block: 30px;
+border-radius: 10px;
+h3{
+    padding-block: 10px;
+}
+}
+.black-bg{
+background: $clr-black;
+color: $clr-white;
+&:hover {
+        transform: scale(1.02);
+    }
+}
+.red-bg{
+background: $clr-love;
+color: $clr-white;
+&:hover {
+        transform: scale(1.02);
+    }
+}
+}
+}
+// ============section absolute containers end=====
+// ============section four start=====
+.section-four-about{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    background: linear-gradient(to right, black, red);
+.section-4-abt-wrapper{
+    display: flex;
+    align-items: center;
+    @media (max-width: 800px) {
+            // grid-template-columns: 1fr 1fr;
+            flex-direction: column;
+        }
+.desc{
+    width: 80%;
+    // padding-block: 100px;
+    padding-left: 30px;
+    @media (max-width: 800px) {
+            width: 90%;
+            padding-top: 20px;
+            text-align: center;
+            padding-left: 0;
+        }
+.desc1{
+    color: $clr-white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+h3{
+    color: $clr-love;
+}
+}
+}
+.img-wrapper{
+    width: 100%;
+    height: fit-content;
+@media (max-width: 800px) {
+    // height: 60vh;
+    }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+}
+}
+// ============section four end=====
+// ============section five start=====
+.section-five-trainer{
+    padding-bottom: 100px;
+    padding-top: 50px;
+.sect-5-trainer-wrapper{
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+.sect-5-desc{
+    width: 60%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+@media (max-width: 900px) {
+    width: 90%;
+    }
+h4 {
+        color: $clr-love;
+    }
+    h2 {
+    }
+    p {
+    }
+}
+
+.img-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+        }
+    @media (max-width: 500px) {
+    grid-template-columns:  1fr;
+        }
+.img-item{
+    position: relative;
+width: 250px;
+height: 300px;
+margin-inline: auto;
+@media (max-width: 900px) {
+        width: 95%;
+        height: 300px;
+    }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+&:hover{
+        transform: scale(1.1);
+        /* Zoom effect on hover */
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+
+
+    &:hover  {
+        opacity: 1;
+        /* Show overlay only on the hovered image */
+    }
+
+    .name {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+
+        a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $clr-love;
+            }
+        }
+    }
+}
+}
+}
+
+}
+}
+
+
+
+
+
+// ============ABOUT SECTION START=====
+// used getwave.io here
+.contact-hero-section{
+    a{
+        color: $clr-love;
+    }
+.image-container {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+.desc-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: $clr-white;
+    
+}
+ img {
+     width: 100%;
+     height: 100%;
+     display: block;
+ }
+    }
+
+    .wave-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+}
+
+.error-message {
+    padding-top: -10px;
+    color: red;
+    font-size: 0.875rem;
+    display: block;
+}
+
+// ======end==============================
+
+
+// ===========PAGE-CATEGORIES SECTION===================
+
+.categories-section{
+    padding-block: 50px;
+    width: 100%;
+    h2{
+        padding-bottom: 50px;
+        color: $clr-love;
+        text-align: center;
+    }
+.categories-wrapper{
+    display: flex;
+    gap: 40px;
+    @media screen and (max-width: 908px) {
+                flex-direction: column;
+        }
+    .left-container {
+    .filters-container{
+    .input-form{
+    .search-input{
+            padding: 0.5rem;
+            border-radius: 10px;
+            border: 1px solid $clr-love;
+            letter-spacing: 1px;
+
+    }
+    }
+    .categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    .categories-btn{
+        width: fit-content;
+        display: block;
+        margin: 0.25em 0;
+        padding: 0.25rem;
+        text-transform: capitalize;
+        background: transparent;
+        border-color: transparent;
+        letter-spacing: 1px;
+        color: $clr-black;
+        cursor: pointer;
+        transition: $transition;
+        font-size: 3vmin;
+        // font-weight: bold;
+   &:hover {
+            color: $clr-love;
+        }
+    }
+    }
+    }
+    }
+    }
+    }
+    
+    .right-container {
+        width: 90%;
+        margin-inline: auto;
+    .exercises-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+        @media screen and (max-width: 908px) {
+                    grid-template-columns: repeat(2, 1fr);
+            }
+        @media screen and (max-width: 700px) {
+                    grid-template-columns:  1fr;
+            }
+        .exercise {
+            // margin-bottom: 1rem;
+            .exercise-img {
+                width: 100%;
+                height: 300px;
+                border-radius: 15px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            }
+        footer{
+        .exercise-name{
+            font-weight: bold;
+            text-align: center;
+            font-size: 28px;
+        }
+        }
+        }
+    }
+    }
+
+
+
+
+
+// =====================TIME TABLE=======================================
+//time table
+
+.timetable-hero-section{
+    width: 100%;
+        height: fit-content;
+        background: linear-gradient(to right, black, red);
+        position: relative;
+.section-4-abt-wrapper{
+    display: flex;
+        align-items: center;
+.desc{
+    width: 50%;
+    @media (max-width: 800px) {
+            width: 70%;
+            padding-top: 20px;
+            text-align: center;
+            padding-left: 0;
+        }
+        @media (max-width: 650px) {
+            padding-inline: 10px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+        }
+.desc1{
+color: $clr-white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+p {
+        @media (max-width: 650px) {
+            font-size: 16px;
+        }
+    }
+button {
+    a {
+        color: $clr-white;
+
+        &:hover {
+            color: $clr-black;
+        }
+    }
+}
+}
+}
+.img-wrapper{
+// width: 50%;
+    height: 100vh;
+
+    @media (max-width: 650px) {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+}
+}
+
+
+// TIME TABLE
+#header{
+    width: 90%;
+        margin-inline: auto;
+#body{
+   
+.timetable {
+        margin-block: 100px;
+        border-collapse: collapse;
+        width: 100%;
+        margin-inline: auto;
+        background-color: white;
+@media screen and (max-width: 800px) {
+        width: 500px;
+    }
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: $clr-black;
+            color: $clr-white;
+        }
+
+        .event:hover {
+            background-color: $clr-love;
+            color: $clr-white;
+        }
+
+        th {
+            background-color: $clr-love;
+            color: $clr-white;
+        }
+    }
+
+
+
+    div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+        filter: alpha(opacity=60); // For IE8 and earlier
+    }
+}
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+    padding: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .timetable th,
+    .timetable td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    /* Stack rows vertically on small screens */
+    .timetable thead {
+        display: none;
+    }
+
+    .timetable tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .timetable td {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .timetable td:first-child {
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// /* Set Swiper container height */
+// .hero-slider {
+//     width: 100%;
+//     height: 100vh; // Full screen height
+
+//     /* Swiper slide styling */
+//     .swiper-slide {
+//         position: relative;
+//         background-size: cover;
+//         background-position: center;
+
+//         /* Overlay styling */
+//         .overlay {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             background: rgba(0, 0, 0, 0.5); // Semi-transparent overlay
+//             z-index: 1; // Ensure it is below the text
+//         }
+
+//         /* Slide text styling */
+//         .slide-text {
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%); // Center the text
+//             color: white;
+//             z-index: 2; // Make sure it's on top of the overlay
+//             text-align: center;
+
+//         .text-animation {
+//                 font-size: 55px;
+//                 font-weight: 600;
+//                 min-width: 300px;
+        
+//                 span {
+//                     position: relative;
+//                     display: inline-block;
+        
+//                     &::after {
+//                         content: '';
+//                         background-color: $clr-white;
+//                         position: absolute;
+//                         width: 3px;
+//                         height: 100%;
+//                         right: -5px;
+//                         top: 0;
+//                         animation: blink 0.6s steps(1) infinite;
+//                     }
+//                 }
+//             }
+        
+//             p {
+//                 color: #fff;
+//             }
+        
+//             a {
+//                 text-decoration: none;
+//                 color: #fff;
+//                 display: inline-block;
+//                 padding: 12px 45px;
+//                 margin: 15px;
+//                 text-transform: uppercase;
+//                 font-family: 'Montserrat', sans-serif;
+//                 font-weight: 500;
+//                 border: 2px solid #fff;
+//                 cursor: pointer;
+        
+//                 &.btn {
+//                     background-color: transparent;
+//                 }
+//             }
+//         }
+//         }
+        
+//         @keyframes blink {
+        
+//             0%,
+//             50% {
+//                 opacity: 1;
+//             }
+        
+//             51%,
+//             100% {
+//                 opacity: 0;
+//             }
+//         }
+//         }
+    
+// .swiper-pagination {
+//     // Style the container of the pagination
+//     display: flex;
+//     justify-content: center;
+
+//     .swiper-pagination-bullet {
+//         width: 12px; // Custom bullet size
+//         height: 12px;
+//         background-color: #ccc; // Default bullet color
+//         opacity: 1;
+//         margin: 0 5px; // Spacing between bullets
+//         border-radius: 50%; // Make bullets circular
+//         transition: background-color 0.3s ease;
+
+//         &.swiper-pagination-bullet-active {
+//             background-color: $clr-love; // Change color for active bullet
+//             transform: scale(1.2); // Enlarge the active bullet slightly
+//         }
+//     }
+// }
+// }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar-scheduler/index.global.min.js'></script>
+
+    <title> Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-preloader" id="dashboard-preloader"></div>
+<!-- NAVBAR -->
+<div class="dashboad-nav">
+    <nav>
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Admin</span>
+        </a>
+        <div class="nav-items">
+            <i class='bx bx-menu'></i>
+            <a href="categories.html" class="nav-link">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+        </div>
+        
+        <a href="#" class="profile"> 
+        <img src="/assets/img/our trainwer 4.jpg">
+        </a>
+    </nav>
+</div>
+<!-- NAVBAR -->
+
+<main>
+    <div class="head-title">
+        <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="title-links">
+                <li>
+                    <a href="index.html">Home</a><span><i class="fa-solid fa-angles-right"></i></span><a class="active" href="log-workout.html">Log Workout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <a href="#" class="btn-download">
+            <i class='bx bxs-cloud-download'></i>
+            <span class="text">Download PDF</span>
+        </a> -->
+    </div>
+
+    <!-- three box section start -->
+    <section class="three-box">
+        <ul class="box-info">
+            <li>
+                <i class="fa-solid fa-people-group"></i>
+                <span class="text">
+                    <!-- <h3>227+</h3>
+                    <p>Member Joined</p> -->
+                    <div class="counter">
+                        <h2><span id="count2" class="count" data-target="227">0</span></h2>
+                        <h4>Member Joined</h4>
+                    </div>
+                </span>
+            </li>
+            <li>
+                <i class="fa-solid fa-dumbbell"></i>
+                <span class="text">
+                    <!-- <h3>156+</h3>
+                    <p>Success Stories</p> -->
+                    <div class="counter">
+                        <h2><span id="count1" class="count" data-target="156">0</span></h2>
+                        <h4>Success Stories</h4>
+                    </div>
+                </span>
+            </li>
+            <li>
+                <i class="fa-solid fa-bicycle"></i></i>
+                <span class="text">
+                    <!-- <h3>91+</h3>
+                    <p>Success Rate</p> -->
+                    <div class="counter">
+                        <h2><span id="count3" class="count" data-target="91">0</span></h2>
+                        <h4>Success Rate</h4>
+                    </div>
+                </span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- dashboard start -->
+    <section class="dashboard-content">
+        <div class="items">
+            <div class="left-items">
+                <div class="dashboard-container">
+                    <div class="two-item-wapper">
+                        <div class="workout-summary">
+                            <h4>Total Workouts</h4>
+                            <p id="total-workouts">Loading...</p>
+                        </div>
+                
+                        <div class="calories-burned">
+                            <h4>Calories Burned</h4>
+                            <p id="total-calories">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="progress-chart">
+                        <h3>Workout Progress</h3>
+                        <div class="chart-container">
+                            <canvas id="progressChart"></canvas>
+                        </div>
+                    </div>
+                <div class="goal-suggest-wrapper">
+                    <div class="goals-achieved">
+                        <h4>Goals Achieved</h4>
+                        <ul id="goals-list">Loading...</ul>
+                    </div>
+                    
+                    <div class="suggested-exercises">
+                        <h4>Suggested Exercises</h4>
+                        <ul id="exercise-suggestions">Loading...</ul>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+            <div class="right-item">
+                <div class="calender-wrapper">
+                    
+                    <div id="workout-calendar"></div>
+                    <button id="open-modal">+</button>
+                    
+                    <!-- Modal for adding workout -->
+                    <div id="workout-modal" style="display: none;">
+                        <h3>Add Workout</h3>
+                        <form id="workout-form">
+                            <label for="workout-name">Workout Name:</label>
+                            <input type="text" id="workout-name" required><br><br>
+                    
+                            <label for="calories-burned">Calories to Burn:</label>
+                            <input type="number" id="calories-burned" required><br><br>
+                    
+                            <label for="duration">Duration (minutes):</label>
+                            <input type="number" id="duration" required><br><br>
+                    
+                            <input type="submit" value="Add Workout">
+                        </form>
+                    </div>
+                    
+                    <div id="scheduled-workouts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="/public/main.script/dashboard.js"></script>
+<script type="module" src="/public/main.script/log-workout.js"></script>
+<script type="module" src="/public/main.script/sections.js"></script>
+
+<script>
+    // =========================dashboard-preloader================================
+    window.addEventListener("load", function () {
+        const preloader = document.getElementById('dashboard-preloader');
+
+        setTimeout(function () {
+            preloader.style.display = 'none';
+        }, 1000);
+    });
+</script>
+</body>
+
+</html>

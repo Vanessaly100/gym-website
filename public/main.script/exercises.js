@@ -1,0 +1,142 @@
+const exercises = [
+  {
+    id: 'rec43w3ipXvP28vog',
+    title: 'Running',
+    categories: 'Cardiovascular ',
+    image: 'https://images.pexels.com/photos/5310731/pexels-photo-5310731.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'rec4f2RIftFCb7aHh',
+    title: 'swimming',
+    categories: 'Cardiovascular ',
+    image: 'https://images.pexels.com/photos/5326894/pexels-photo-5326894.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'rec8kkCmSiMkbkiko',
+    title: 'dancing',
+    categories: 'Cardiovascular ',
+    image: 'https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recBohCqQsot4Q4II',
+    title: 'Cycling',
+    categories: 'Cardiovascular ',
+    image: 'https://cdn.pixabay.com/photo/2019/08/10/19/52/cycling-4397606_1280.jpg',
+
+  },
+  {
+    id: 'recDG1JRZnbpRHpoy',
+    title: 'brisk walking',
+    categories: 'Cardiovascular ',
+    image: 'https://images.pexels.com/photos/4348627/pexels-photo-4348627.jpeg?auto=compress&cs=tinysrgb&w=800',
+
+  },
+  {
+    id: 'recNWGyP7kjFhSqw3',
+    title: 'Weightlifting',
+    categories: 'Muscular Strength',
+    image: 'https://images.pexels.com/photos/5837242/pexels-photo-5837242.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recZEougL5bbY4AEx',
+    title: 'push-ups',
+    categories: 'Muscular Strength',
+    image: 'https://images.pexels.com/photos/5837208/pexels-photo-5837208.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recjMK1jgTb2ld7sv',
+    title: 'squats',
+    categories: 'Muscular Strength',
+    image: 'https://images.pexels.com/photos/4662331/pexels-photo-4662331.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recmg2a1ctaEJNZhu',
+    title: 'deadlifts',
+    categories: 'Muscular Strength',
+    image: 'https://images.pexels.com/photos/1552103/pexels-photo-1552103.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recvKMNR3YFw0bEt3',
+    title: 'Stretching exercises',
+    categories: 'Flexibility',
+    image: 'https://images.pexels.com/photos/6516231/pexels-photo-6516231.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recxaXFy5IW539sgM',
+    title: 'yoga',
+    categories: 'Flexibility',
+    image: 'https://images.pexels.com/photos/5384533/pexels-photo-5384533.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'Pilates',
+    categories: 'Flexibility',
+    image: 'https://images.pexels.com/photos/5837077/pexels-photo-5837077.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'dynamic warm-ups',
+    categories: 'Flexibility',
+    image: 'https://images.pexels.com/photos/3763871/pexels-photo-3763871.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'Sprinting',
+    categories: 'Speed',
+    image: 'https://images.pexels.com/photos/3764163/pexels-photo-3764163.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'speed skating',
+    categories: 'Speed',
+    image: 'https://images.pexels.com/photos/6539465/pexels-photo-6539465.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'high-intensity interval training ',
+    categories: 'Speed',
+    image: 'https://images.pexels.com/photos/5837010/pexels-photo-5837010.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'Agility ladder drills',
+    categories: 'Agility',
+    image: 'https://images.pexels.com/photos/5383720/pexels-photo-5383720.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'cone drills',
+    categories: 'Agility',
+    image: 'https://images.pexels.com/photos/6203910/pexels-photo-6203910.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'shuttle runs',
+    categories: 'Agility',
+    image: 'https://images.pexels.com/photos/5329438/pexels-photo-5329438.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'Plyometrics',
+    categories: 'Coordination',
+    image: 'https://images.pexels.com/photos/7675412/pexels-photo-7675412.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'box jumps',
+    categories: 'Coordination',
+    image: 'https://images.pexels.com/photos/4164658/pexels-photo-4164658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'powerlifting',
+    categories: 'Coordination',
+    image: 'https://images.pexels.com/photos/5837229/pexels-photo-5837229.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 'recyqtRglGNGtO4Q5',
+    title: 'Olympic weightlifting',
+    categories: 'Coordination',
+    image: 'https://images.pexels.com/photos/7187934/pexels-photo-7187934.jpeg?auto=compress&cs=tinysrgb&',
+  },
+];
