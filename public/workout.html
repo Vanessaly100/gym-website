@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
 </head>
 
 <body>
@@ -124,27 +124,28 @@
         <div id="Timer-container">
             <div class="timer-num">
                 <h2 id="hour-label" class="label">H</h2>
-            <input id="hour" type="number" max="99" min="0" value="0" class="time">
+            <input id="hour" type="number" max="99" min="0" value="0" title="time" class="time">
             <span id="p1" class="semicolon">:</span>
             </div>
             
             <div class="timer-num">
                 <h2 id="min-label" class="label">M</h2>
-            <input id="minute" type="number" max="60" min="0" value="0" class="time">
+            <input id="minute" type="number" max="60" min="0" value="0" class="time" title="Minutes" placeholder="Minutes">
             <span id="p2" class="semicolon">:</span>
             </div>
            
             <div class="timer-num">
                 <h2 id="sec-label" class="label">S</h2>
-            <input id="sec" type="number" max="99" min="0" value="0" class="time">
+            <label for="sec" class="visually-hidden">Seconds</label>
+            <input id="sec" type="number" max="99" min="0" value="0" class="time" title="Seconds" placeholder="Seconds">
             </div>
         </div>
 
         
     </div>
 <div class="timerBtn">
-    <button id="start" class="btn"><i class="fa-solid fa-play"></i></button>
-    <button id="reset" class="btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+    <button id="start" class="btn"><i class="fa-solid fa-play" title="start"></i></button>
+    <button id="reset" class="btn" title="reset"><i class="fa-solid fa-arrows-rotate"></i></button>
 </div>
     <!-- videos one start -->
 <div class="workout-wrapper">
@@ -203,7 +204,7 @@
                         <span id="password_error" class="error"></span>
                     </div>
                     <div class="gender-container">
-                        <select id="gender" name="gender" required>
+                        <select id="gender" name="gender" title="gender" required>
                             <option value="" disabled selected>Select your gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -214,7 +215,7 @@
                 </div>
                 <div class="level-goals">
                     <div class="level-wrapper">
-                        <select id="fitness_level" name="fitness_level" required>
+                        <select id="fitness_level" name="fitness_level" title="fitness_level" required>
                             <option value="" disabled selected>Select your fitness level</option>
                             <option value="beginner">Beginner</option>
                             <option value="intermediate">Intermediate</option>
@@ -223,7 +224,7 @@
                         <span id="level_error" class="error"></span>
                     </div>
                     <div class="goal-wrapper">
-                        <select id="workout_goal" name="workout_goal" required>
+                        <select id="workout_goal" name="workout_goal" title="workout_goal" required>
                             <option value="" disabled selected>Select your workout goal</option>
                             <option value="weight_loss">Weight Loss</option>
                             <option value="muscle_gain">Muscle Gain</option>
@@ -235,7 +236,7 @@
                     </div>
                 </div>
                 <div class="preferred-time-container">
-                    <select id="preferred_time" name="preferred_time" required>
+                    <select id="preferred_time" name="preferred_time" title="preferred_time" required>
                         <option value="" disabled selected>Select your preferred workout time</option>
                         <option value="morning">Morning</option>
                         <option value="afternoon">Afternoon</option>
@@ -245,7 +246,7 @@
                 </div>
                 <div class="newsletter-container">
                     <span>Sign up for our fitness newsletter</span>
-                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <input type="checkbox" id="newsletter" title="newsletter" name="newsletter">
                 </div>
     
                 <button id="registerBtn">Register</button>
@@ -485,13 +486,13 @@
     }
 
 </script>
-        <script type="module" src="/public/main.script/scrollreveal.js"></script>
+        <script type="module" src="../script/scrollreveal.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script type="module" src="/public/main.script/sections.js"></script>
-    <script type="module" src="/public/main.script/script.js"></script>
-    <script type="module" src="/public/main.script/api-workout.js"></script>
-    <script type="module" src="/public/main.script/subsc-register-form.js"></script>
+    <script type="module" src="../script/sections.js"></script>
+    <script type="module" src="../script/script.js"></script>
+    <script type="module" src="../script/api-workout.js"></script>
+    <script type="module" src="../script/subsc-register-form.js"></script>
     <script>
         window.addEventListener('load', function () {
                 const preloader = document.getElementById('preloader');

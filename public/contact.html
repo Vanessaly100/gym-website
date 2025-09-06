@@ -10,7 +10,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/appwrite@15.0.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
@@ -55,7 +55,7 @@
 
 
                 <!-- Mobile menu -->
-                <div id="mobile-menu" class="mobile-menu hidden slideInDown">
+                <div id="mobile-menu" class="mobile-menu slideInDown">
                     <ul>
                         <li class="menu-item"><a href="index.html" class="activ">Home</a></li>
                         <li class="menu-item"><a href="about.html">About Us</a></li>
@@ -98,7 +98,7 @@
     <section class="contact-hero-section">
         <div class="image-container">
             <!-- Your Image -->
-            <img src="/assets/img/portfolio2-772x528.jpg" alt="Your Image">
+            <img src="../assets/img/portfolio2-772x528.jpg" alt="Your Image">
             <div class="desc-wrapper">
                 <h1>CONTACT US</h1>
                 <button class="about-btn"><a href="index.html">HOME</a> <span><i class="fa-solid fa-angle-right"></i></span> <a
@@ -204,7 +204,7 @@
                         <span id="password_error" class="error"></span>
                     </div>
                     <div class="gender-container">
-                        <select id="gender" name="gender" required>
+                        <select id="gender" name="gender" title="gender" required>
                             <option value="" disabled selected>Select your gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -215,7 +215,7 @@
                 </div>
                 <div class="level-goals">
                     <div class="level-wrapper">
-                        <select id="fitness_level" name="fitness_level" required>
+                        <select id="fitness_level" name="fitness_level" title="fitness_level" required>
                             <option value="" disabled selected>Select your fitness level</option>
                             <option value="beginner">Beginner</option>
                             <option value="intermediate">Intermediate</option>
@@ -224,7 +224,7 @@
                         <span id="level_error" class="error"></span>
                     </div>
                     <div class="goal-wrapper">
-                        <select id="workout_goal" name="workout_goal" required>
+                        <select id="workout_goal" name="workout_goal" title="workout_goal" required>
                             <option value="" disabled selected>Select your workout goal</option>
                             <option value="weight_loss">Weight Loss</option>
                             <option value="muscle_gain">Muscle Gain</option>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
                 <div class="preferred-time-container">
-                    <select id="preferred_time" name="preferred_time" required>
+                    <select id="preferred_time" name="preferred_time" title="preferred_time" required>
                         <option value="" disabled selected>Select your preferred workout time</option>
                         <option value="morning">Morning</option>
                         <option value="afternoon">Afternoon</option>
@@ -246,7 +246,7 @@
                 </div>
                 <div class="newsletter-container">
                     <span>Sign up for our fitness newsletter</span>
-                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" title="newsletter">
                 </div>
     
                 <button id="registerBtn">Register</button>
@@ -484,16 +484,16 @@
     <script>
         AOS.init();
     </script>
-    <script type="module" src="/public/main.script/scrollreveal.js"></script>
+    <script type="module" src="../script/scrollreveal.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("AfCwd51JtnfFTz6tN");
         })();
     </script>
-    <script type="module" src="/public/main.script/regitration-contact-form.js"></script>
-    <script type="module" src="/public/main.script/script.js"></script>
-    <script type="module" src="/public/main.script/subsc-register-form.js"></script>
+    <script type="module" src="../script/regitration-contact-form.js"></script>
+    <script type="module" src="../script/script.js"></script>
+    <script type="module" src="../script/subsc-register-form.js"></script>
 
     <script>
         // =========================contact-preloader================================

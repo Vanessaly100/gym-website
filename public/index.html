@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://unpkg.com/scrollreveal@4"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
 </head>
 
 <body>
@@ -34,11 +34,11 @@
     
 <div id="wrapper" id="hom">
     <div class="owl-carousel" id="slider-area">
-        <div style="background-image: url(/assets/img/image55.jpg)"></div>
-        <div style="background-image: url(/assets/img/blog-1.jpg)"></div>
-        <div style="background-image: url(/assets/img/class-2.jpg)"></div>
-        <div style="background-image: url(/assets/img/class-4.jpg)"></div>
-        <div style="background-image: url(/assets/img/image3.jpg)">
+        <div style="background-image: url(../assets/img/image55.jpg)"></div>
+        <div style="background-image: url(../assets/img/blog-1.jpg)"></div>
+        <div style="background-image: url(../assets/img/class-2.jpg)"></div>
+        <div style="background-image: url(../assets/img/class-4.jpg)"></div>
+        <div style="background-image: url(../assets/img/image3.jpg)">
         </div>
     </div>
 
@@ -51,7 +51,7 @@
             </div>
             <div class="header-right">
                 <ul class="main-menu">
-                    <li class="menu-item"><a href="index.html" class="activ">Home</a></li>
+                    <li class="menu-item"><a href="index.html" class="active">Home</a></li>
                     <li class="menu-item"><a href="about.html">About us</a></li>
                     <li class="menu-item mega-menu">
                         <a href="#">Pages +</a>
@@ -80,7 +80,7 @@
 
 
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="mobile-menu hidden slideInDown">
+            <div id="mobile-menu" class="mobile-menu">
                 <ul>
                     <li class="menu-item"><a href="index.html" class="activ">Home</a></li>
                     <li class="menu-item"><a href="about.html">About Us</a></li>
@@ -103,12 +103,13 @@
                     <li class="menu-item dropdown">
                         <a href="workout.html"> Workout</a>
                     </li>
+                     <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                     <li class="header-btn">
                     <button class="register-btn" id="headerBtn">
                         Register
                     </button>
                     </li>
-                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                   
                     
                 </ul>
             </div>
@@ -136,7 +137,7 @@
 <section class="about  section-one">
     <div class="about-contents">
         <div class="about-left-col">
-            <img src="https://cdn.pixabay.com/photo/2021/01/04/06/21/man-5886576_1280.jpg">
+            <img src="https://cdn.pixabay.com/photo/2021/01/04/06/21/man-5886576_1280.jpg" alt="about image" />
         </div>
         <div class="about-right-col">
             <h4>Why Choose Us</h4>
@@ -287,7 +288,7 @@
                     <!-- question title -->
                     <div class="question-title">
                         <p>Can you describe the coaching plan differences in a nutshell?</p>
-                        <button type="button" class="question-btn">
+                        <button type="button" class="question-btn" aria-label="Toggle question details">
                             <span class="plus-icon">
                                 <i class="far fa-plus-square"></i>
                             </span>
@@ -334,7 +335,7 @@
                     <!-- question title -->
                     <div class="question-title">
                         <p>Can I speak to a Coach and get more information before I join? </p>
-                        <button type="button" class="question-btn">
+                        <button type="button" class="question-btn" aria-label="Toggle question details">
                             <span class="plus-icon">
                                 <i class="far fa-plus-square"></i>
                             </span>
@@ -358,7 +359,7 @@
                     <div class="question-title">
                         <p>How long does it take to get my plan after I join?</p>
                         <!-- button -->
-                        <button type="button" class="question-btn">
+                        <button type="button" class="question-btn" aria-label="Toggle question details">
                             <span class="plus-icon">
                                 <i class="far fa-plus-square"></i>
                             </span>
@@ -388,7 +389,7 @@
                     <div class="question-title">
                         <p>Why doesn't VEEFIT post before and after pictures of clients on their website?</p>
                         <!-- button -->
-                        <button type="button" class="question-btn">
+                        <button type="button" class="question-btn" aria-label="Toggle question details">
                             <span class="plus-icon">
                                 <i class="far fa-plus-square"></i>
                             </span>
@@ -418,7 +419,7 @@
                     <div class="question-title">
                         <p>What if I don't have or want a gym membership?</p>
                         <!-- button -->
-                        <button type="button" class="question-btn">
+                        <button type="button" class="question-btn" aria-label="Toggle question details">
                             <span class="plus-icon">
                                 <i class="far fa-plus-square"></i>
                             </span>
@@ -768,7 +769,7 @@
                     <span id="password_error" class="error"></span>
                 </div>
                 <div class="gender-container">
-                    <select id="gender" name="gender" required>
+                    <select id="gender" name="gender" title="gender" required>
                         <option value="" disabled selected>Select your gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -779,7 +780,7 @@
             </div>
             <div class="level-goals">
                 <div class="level-wrapper">
-                    <select id="fitness_level" name="fitness_level" required>
+                    <select id="fitness_level" name="fitness_level" title="fitness_level" required>
                         <option value="" disabled selected>Select your fitness level</option>
                         <option value="beginner">Beginner</option>
                         <option value="intermediate">Intermediate</option>
@@ -788,7 +789,7 @@
                     <span id="level_error" class="error"></span>
                 </div>
                 <div class="goal-wrapper">
-                    <select id="workout_goal" name="workout_goal" required>
+                    <select id="workout_goal" name="workout_goal" title="workout_goal" required>
                         <option value="" disabled selected>Select your workout goal</option>
                         <option value="weight_loss">Weight Loss</option>
                         <option value="muscle_gain">Muscle Gain</option>
@@ -800,7 +801,7 @@
                 </div>
             </div>
             <div class="preferred-time-container">
-                <select id="preferred_time" name="preferred_time" required>
+                <select id="preferred_time" name="preferred_time" title="preferred_time" required>
                     <option value="" disabled selected>Select your preferred workout time</option>
                     <option value="morning">Morning</option>
                     <option value="afternoon">Afternoon</option>
@@ -1048,11 +1049,11 @@
     <script>
         AOS.init();
     </script>
-<script type="module" src="/public/main.script/scrollreveal.js"></script>
+<script type="module" src="../script/scrollreveal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module" src="/public/main.script/script.js"></script>
-    <script type="module" src="/public/main.script/homepage.js"></script>
-<script type="module" src="/public/main.script/subsc-register-form.js"></script>
-<script type="module" src="/public/main.script/firebaseauth.js"></script>
+    <script type="module" src="../script/script.js"></script>
+    <script type="module" src="../script/homepage.js"></script>
+<script type="module" src="../script/subsc-register-form.js"></script>
+<script type="module" src="../script/firebaseauth.js"></script>
 </body>
 </html>

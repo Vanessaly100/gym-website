@@ -1,3 +1,5 @@
+ sass --watch src/style.scss:src/style.css
+ 
 LOG WORKOUT BMI PROCESSES
 
  Here’s a list of all the processes happening in the code:

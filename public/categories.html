@@ -10,7 +10,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- styles -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/appwrite@15.0.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
@@ -20,7 +20,7 @@
 
 <body>
     <div class="categories-preloader" id="categories-preloader"></div>
-    <nav>
+    <nav> 
         <header class="header">
             <div class="header-row containers" role="navigation" aria-label="Main">
                 <div class="header-left">
@@ -99,7 +99,7 @@
     <section class="contact-hero-section">
         <div class="image-container">
             <!-- Your Image -->
-            <img src="/assets/img/portfolio2-772x528.jpg" alt="Your Image">
+            <img src="../assets/img/portfolio2-772x528.jpg" alt="Your Image">
             <div class="desc-wrapper">
                 <h1>CATEGORIES</h1>
             </div>
@@ -140,7 +140,7 @@
             <!-- single product -->
             <article class="exercise">
                         <div class="exercise-img">
-                            <img src="/assets/img/class-2.jpg"
+                            <img src="../assets/img/class-2.jpg"
                                alt="" />
                         </div>
                     <footer>    
@@ -181,7 +181,7 @@
                     <span id="password_error" class="error"></span>
                 </div>
                 <div class="gender-container">
-                    <select id="gender" name="gender" required>
+                    <select id="gender" title="gender" name="gender" required>
                         <option value="" disabled selected>Select your gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -192,7 +192,7 @@
             </div>
             <div class="level-goals">
                 <div class="level-wrapper">
-                    <select id="fitness_level" name="fitness_level" required>
+                    <select id="fitness_level" name="fitness_level" required title="Select your fitness level">
                         <option value="" disabled selected>Select your fitness level</option>
                         <option value="beginner">Beginner</option>
                         <option value="intermediate">Intermediate</option>
@@ -201,7 +201,7 @@
                     <span id="level_error" class="error"></span>
                 </div>
                 <div class="goal-wrapper">
-                    <select id="workout_goal" name="workout_goal" required>
+                    <select id="workout_goal" name="workout_goal" required title="Select your workout goal">
                         <option value="" disabled selected>Select your workout goal</option>
                         <option value="weight_loss">Weight Loss</option>
                         <option value="muscle_gain">Muscle Gain</option>
@@ -213,7 +213,8 @@
                 </div>
             </div>
             <div class="preferred-time-container">
-                <select id="preferred_time" name="preferred_time" required>
+                <label for="preferred_time" class="visually-hidden">Preferred Workout Time</label>
+                <select id="preferred_time" name="preferred_time" required title="Preferred Workout Time">
                     <option value="" disabled selected>Select your preferred workout time</option>
                     <option value="morning">Morning</option>
                     <option value="afternoon">Afternoon</option>
@@ -223,10 +224,11 @@
             </div>
             <div class="newsletter-container">
                 <span>Sign up for our fitness newsletter</span>
-                <input type="checkbox" id="newsletter" name="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter"
+                title="Subscribe to our fitness newsletter" value="yes">
             </div>
 
-            <button id="registerBtn">Register</button>
+            <button type="submit" id="registerBtn">Register</button>
         </div>
 
     </div>
@@ -462,11 +464,11 @@
     <script>
         AOS.init();
     </script>
-    <script type="module" src="/public/main.script/scrollreveal.js"></script>
-    <script  src="/public/main.script/exercises.js"></script>
-    <script  src="/public/main.script/filter.js"></script>
-    <script type="module" src="/public/main.script/script.js"></script>
-    <script type="module" src="/public/main.script/subsc-register-form.js"></script>
+    <script type="module" src="../script/scrollreveal.js"></script>
+    <script  src="../script/exercises.js"></script>
+    <script  src="../script/filter.js"></script>
+    <script type="module" src="../script/script.js"></script>
+    <script type="module" src="../script/subsc-register-form.js"></script>
 
     <script>
         // =========================categoris-preloader================================

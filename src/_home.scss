@@ -598,6 +598,7 @@ h4{
 }
 }
 .section-6-items{
+    // padding: 10px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
@@ -616,6 +617,7 @@ h4{
 .sec-6-item{
     border: 1px solid red;
     padding-block: 50px;
+    padding-inline: 20px;
 h3{
     color: $clr-white;
     text-align: center;

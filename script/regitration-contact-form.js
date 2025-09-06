@@ -42,7 +42,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
       name: name,
       email: email,
       message: message,
-    };
+    }; 
 
     //Use emailjs to Send the Form
     const serviceID = "service_pj1he13";

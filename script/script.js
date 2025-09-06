@@ -49,32 +49,30 @@
     });
   });
 
-
-
-
 // ********** set date ************
 const date = document.getElementById('date');
 date.innerHTML = new Date().getFullYear()
 // =============================================
-//hand burger
-const mobileBtn = document.getElementById('hamburger-icon')
-const mobileMenu = document.getElementById('mobile-menu')
-const mobileMenuicon = document.querySelector('#hamburger-icon i')
+// hand burger
+const mobileBtn = document.getElementById('hamburger-icon');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuicon = document.querySelector('#hamburger-icon i');
 
 mobileBtn.addEventListener('click', () => {
-    // Open/hide mobile menu
-    mobileMenu.classList.toggle('hidden')
+  // Toggle mobile menu
+  mobileMenu.classList.toggle("active");
 
-    // Change mobile toggler icon on open/close
-    if(!mobileMenu.classList.contains('hidden')) {
-        mobileMenuicon.classList.remove('fa-bars')
-        mobileMenuicon.classList.add('fa-xmark')
-    } else {
-        mobileMenuicon.classList.remove('fa-xmark')
-        mobileMenuicon.classList.add('fa-bars')
-    }
-
-})
+  // If menu is open → show X
+  if (mobileMenu.classList.contains("active")) {
+    mobileMenuicon.classList.remove("fa-bars");
+    mobileMenuicon.classList.add("fa-xmark");
+  } 
+  // If menu is closed → show bars
+  else {
+    mobileMenuicon.classList.remove("fa-xmark");
+    mobileMenuicon.classList.add("fa-bars");
+  }
+});
 
 
 
